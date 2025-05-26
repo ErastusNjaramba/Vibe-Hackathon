@@ -1,0 +1,55 @@
+body {
+         font-family: Arial, sans-serif;
+         max-width: 800px;
+         margin: 0 auto;
+         padding: 20px;
+         background-color: #f0f4f8;
+     }
+     h1 {
+         color: #2c3e50;
+         text-align: center;
+     }
+     form {
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+         margin-bottom: 20px;
+     }
+     input, button {
+         padding: 10px;
+         font-size: 16px;
+         border: 1px solid #ccc;
+         border-radius: 5px;
+     }
+     button {
+         background-color: #3498db;
+         color: white;
+         cursor: pointer;
+     }
+     button:hover {
+         background-color: #2980b9;
+     }
+     .success {
+         color: green;
+         font-weight: bold;
+     }
+     table {
+         width: 100%;
+         border-collapse: collapse;
+     }
+     th, td {
+         border: 1px solid #ccc;
+         padding: 10px;
+         text-align: left;
+     }
+     th {
+         background-color: #3498db;
+         color: white;
+     }
+     .fade-in {
+         animation: fadeIn 1s ease-in;
+     }
+     @keyframes fadeIn {
+         from { opacity: 0; }
+         to { opacity: 1; }
+     }

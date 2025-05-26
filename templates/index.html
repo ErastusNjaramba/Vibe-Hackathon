@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <title>Vibe Healthtech</title>
+         <link rel="stylesheet" href="/static/style.css">
+     </head>
+     <body>
+         <h1>Follow-Up Reminder System</h1>
+         <form action="/add_appointment" method="POST">
+             <input type="text" name="patient_name" placeholder="Patient Name" required>
+             <input type="text" name="phone" placeholder="Phone Number" required>
+             <input type="datetime-local" name="appointment_time" required>
+             <button type="submit">Add Appointment</button>
+         </form>
+         {% if message %}
+             <p class="success">{{ message }}</p>
+         {% endif %}
+         <a href="/dashboard">View Dashboard</a>
+         <script src="/static/script.js"></script>
+     </body>
+     </html>

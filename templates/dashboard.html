@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <title>Dashboard</title>
+         <link rel="stylesheet" href="/static/style.css">
+     </head>
+     <body>
+         <h1>Appointments Dashboard</h1>
+         <table>
+             <tr>
+                 <th>ID</th>
+                 <th>Patient Name</th>
+                 <th>Phone</th>
+                 <th>Appointment Time</th>
+                 <th>Reminder Sent</th>
+             </tr>
+             {% for appt in appointments %}
+             <tr class="fade-in">
+                 <td>{{ appt[0] }}</td>
+                 <td>{{ appt[1] }}</td>
+                 <td>{{ appt[2] }}</td>
+                 <td>{{ appt[3] }}</td>
+                 <td>{{ 'Yes' if appt[4] else 'No' }}</td>
+             </tr>
+             {% endfor %}
+         </table>
+         <a href="/">Add New Appointment</a>
+     </body>
+     </html>
